@@ -1,0 +1,24 @@
+/** Section **/
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .uno {
+        grid-column: 1/4;
+    }
+}
+
+.personalizacion {
+    color: $blanco;
+    background-color: $oscuro;
+    margin-top: 3rem;
+    padding: 8rem;
+}
+
+.destacados {
+    margin-top: 2rem;
+    padding: 2rem;
+}
