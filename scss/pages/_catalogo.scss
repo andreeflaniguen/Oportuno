@@ -1,10 +1,10 @@
 /** Producto **/
 
 .producto {
-    background-color: $claro;
+    background-color: $secundario;
     padding: 1rem;
     border-radius: 10px;
-    margin:  1rem 1rem 1rem 1rem 
+    margin:  1rem 1rem 1rem 1rem;
 }
 
 .producto__nombre {
@@ -16,12 +16,18 @@
     color: $primario;
 }
 
+.producto__informacion {
+    display: flex;
+    flex-direction: column;
+}
+
 .producto__nombre,
 .producto__precio {
     font-family: $fuenteHeading;
     text-align: center;
     margin: 1rem 0;
     line-height: 1.2;
+    color: $blanco;
 }
 
 /** Graficos **/

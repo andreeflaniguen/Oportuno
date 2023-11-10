@@ -209,7 +209,7 @@ input[type=submit]:hover {
 
 /** Producto **/
 .producto {
-  background-color: #D6CBB8;
+  background-color: #566440;
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem 1rem 1rem 1rem;
@@ -224,12 +224,18 @@ input[type=submit]:hover {
   color: #7A5145;
 }
 
+.producto__informacion {
+  display: flex;
+  flex-direction: column;
+}
+
 .producto__nombre,
 .producto__precio {
   font-family: "braga", sans-serif;
   text-align: center;
   margin: 1rem 0;
   line-height: 1.2;
+  color: #ffffff;
 }
 
 /** Graficos **/
@@ -267,7 +273,7 @@ input[type=submit]:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
-  .uno {
+  .portada {
     grid-column: 1/4;
   }
 }
