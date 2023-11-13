@@ -21,6 +21,10 @@ body {
   background-color: #ffffff;
 }
 
+main {
+  margin-top: 10rem;
+}
+
 /* Globales */
 .contenedor {
   max-width: 120rem;
@@ -85,6 +89,13 @@ img {
 }
 
 /* Header */
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+}
+
 .barra {
   display: flex;
   flex-direction: column;
@@ -284,9 +295,60 @@ input[type=submit]:hover {
   padding: 8rem;
 }
 
+.personalizacion h2 {
+  font-size: 5rem;
+}
+
+.personalizacion p {
+  font-size: 2.8rem;
+}
+
 .destacados {
   margin-top: 2rem;
   padding: 2rem;
+}
+
+/** Pagina del Producto **/
+.caja img {
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .caja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.formulario__campo {
+  border: 1px solid #000000;
+  background-color: transparent;
+  color: #000000;
+  font-size: 2rem;
+  font-family: "cocomat", sans-serif;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.formulario__submit {
+  border: none;
+  font-size: 2rem;
+  font-family: var(--fuentePrincipal);
+  padding: 2rem;
+  transition: font-size 0.3s, background-color 0.3s ease;
+  grid-column: 1/3;
+  border-radius: 10px;
+}
+
+.formulario__submit:hover {
+  cursor: pointer;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

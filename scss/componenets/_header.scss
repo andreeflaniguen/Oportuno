@@ -1,9 +1,17 @@
 /* Header */
 
+.header {
+    width: 100%;
+    background-color: $blanco;
+    position: fixed;
+    top: 0;
+}
+
 .barra {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 @media (min-width: 992px) {
     .barra {
