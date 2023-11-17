@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "cocomat";
-  src: url(../font/Cocomat\ Ultralight-trial.ttf);
+  src: url(../font/Cocomat-Ultralight-trial.ttf);
 }
 /** Variables **/
 * {
@@ -218,30 +218,24 @@ input[type=submit]:hover {
   height: 550px;
 }
 
-/** Producto **/
 .producto {
   background-color: #566440;
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem 1rem 1rem 1rem;
 }
-
 .producto__nombre {
   font-size: 4rem;
 }
-
 .producto__precio {
   font-size: 2.8rem;
   color: #7A5145;
 }
-
 .producto__informacion {
   display: flex;
   flex-direction: column;
 }
-
-.producto__nombre,
-.producto__precio {
+.producto__nombre, .producto__precio {
   font-family: "braga", sans-serif;
   text-align: center;
   margin: 1rem 0;
@@ -257,26 +251,24 @@ input[type=submit]:hover {
   grid-column: 1/3;
   margin: 1rem 1rem 1rem 1rem;
 }
-
 .grafico--caja {
   background-image: url(../img/DSC_0061\(1\).jpg);
   grid-row: 2/3;
   border-radius: 10px;
 }
-
 .grafico--portada {
   background-image: url(../img/portada.jpg);
   grid-row: 8/9;
   border-radius: 10px;
 }
-
 @media (min-width: 768px) {
-  .grafico--portada {
+  .grafico .grafico--portada {
     grid-row: 5/6;
     grid-column: 2/4;
     border-radius: 10px;
   }
 }
+
 /** Section **/
 @media (min-width: 768px) {
   .grid {
