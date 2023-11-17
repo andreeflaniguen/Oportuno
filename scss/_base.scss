@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'braga';
-    src: url(../font/Braga.otf);
-}
 
 @font-face {
     font-family: 'cocomat';
@@ -9,7 +5,7 @@
 }
 
 /** Variables **/
-    $fuenteHeading: 'braga', sans-serif;
+    $fuenteHeading: sans-serif;
     $fuenteParrafos: 'cocomat', sans-serif;
 
     $primario: #7A5145;
@@ -77,6 +73,10 @@ p {
 
 img {
     max-width: 100%;
+}
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Utilidades */

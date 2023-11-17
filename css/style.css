@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "braga";
-  src: url(../font/Braga.otf);
-}
-@font-face {
   font-family: "cocomat";
   src: url(../font/Cocomat-Ultralight-trial.ttf);
 }
@@ -38,7 +34,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-family: "braga", sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -63,6 +59,10 @@ p {
 
 img {
   max-width: 100%;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Utilidades */
@@ -120,7 +120,6 @@ img {
   width: 400px;
 }
 
-/** Footer **/
 .footer {
   background-color: #343534;
   height: 5rem;
@@ -160,7 +159,7 @@ img {
 }
 
 form {
-  width: 500px;
+  width: 450px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -209,15 +208,26 @@ input[type=submit]:hover {
     display: flex;
   }
 }
-/** Pagos **/
 .pagos {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 550px;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
+.carrito {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .carrito {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .producto {
   background-color: #566440;
   padding: 1rem;
@@ -236,7 +246,7 @@ input[type=submit]:hover {
   flex-direction: column;
 }
 .producto__nombre, .producto__precio {
-  font-family: "braga", sans-serif;
+  font-family: sans-serif;
   text-align: center;
   margin: 1rem 0;
   line-height: 1.2;
@@ -256,19 +266,20 @@ input[type=submit]:hover {
   grid-row: 2/3;
   border-radius: 10px;
 }
+
 .grafico--portada {
   background-image: url(../img/portada.jpg);
   grid-row: 8/9;
   border-radius: 10px;
 }
+
 @media (min-width: 768px) {
-  .grafico .grafico--portada {
+  .grafico--portada {
     grid-row: 5/6;
     grid-column: 2/4;
     border-radius: 10px;
   }
 }
-
 /** Section **/
 @media (min-width: 768px) {
   .grid {

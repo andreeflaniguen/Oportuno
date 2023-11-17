@@ -44,8 +44,10 @@
         grid-row: 2/3;
         border-radius: 10px;
     }
+}
+    
 
-    &--portada {
+    .grafico--portada {
         background-image: url(../img/portada.jpg);
         grid-row: 8/9;
         border-radius: 10px;
@@ -57,7 +59,7 @@
             border-radius: 10px;
         }
     }
-}
+
 
 
 
