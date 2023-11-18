@@ -9,6 +9,14 @@
     .portada {
         grid-column: 1/4;
     }
+    
+    .personalizacion h2 {
+        font-size: 5rem;
+    }
+    
+    .personalizacion p {
+        font-size: 2.8rem;
+    }
 }
 
 .personalizacion {
@@ -16,14 +24,6 @@
     background-color: $oscuro;
     margin-top: 3rem;
     padding: 8rem;
-}
-
-.personalizacion h2 {
-    font-size: 5rem;
-}
-
-.personalizacion p {
-    font-size: 2.8rem;
 }
 
 .destacados {

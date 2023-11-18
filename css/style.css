@@ -21,6 +21,11 @@ main {
   margin-top: 10rem;
 }
 
+@media (max-width: 468px) {
+  main {
+    margin-top: 40rem;
+  }
+}
 /* Globales */
 .contenedor {
   max-width: 120rem;
@@ -102,13 +107,9 @@ span {
   align-items: center;
 }
 
-@media (min-width: 992px) {
-  .barra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+.navegacion {
+  display: flex;
+  flex-direction: column;
 }
 .navegacion__enlace {
   font-size: 1.8rem;
@@ -116,6 +117,19 @@ span {
   padding: 1rem;
 }
 
+@media (min-width: 468px) {
+  .navegacion {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
 .logo {
   width: 400px;
 }
@@ -177,7 +191,7 @@ span {
   }
 }
 form {
-  width: 450px;
+  width: auto;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -241,10 +255,6 @@ input[type=submit]:hover {
     justify-content: space-evenly;
   }
 }
-.catalogo {
-  margin-top: 15rem;
-}
-
 .producto {
   background-color: #566440;
   padding: 1rem;
@@ -307,20 +317,18 @@ input[type=submit]:hover {
   .portada {
     grid-column: 1/4;
   }
+  .personalizacion h2 {
+    font-size: 5rem;
+  }
+  .personalizacion p {
+    font-size: 2.8rem;
+  }
 }
 .personalizacion {
   color: #ffffff;
   background-color: #343534;
   margin-top: 3rem;
   padding: 8rem;
-}
-
-.personalizacion h2 {
-  font-size: 5rem;
-}
-
-.personalizacion p {
-  font-size: 2.8rem;
 }
 
 .destacados {

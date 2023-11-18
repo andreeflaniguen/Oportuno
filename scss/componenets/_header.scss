@@ -12,20 +12,33 @@
     align-items: center;
     
 }
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+
+    &__enlace {
+        font-size: 1.8rem;
+        color: $negro;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 468px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 992px) {
     .barra {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
     }
 }
 
-.navegacion__enlace {
-    font-size: 1.8rem;
-    color: $negro;
-    padding: 1rem;
-}
 
 
 .logo {
