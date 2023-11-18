@@ -89,7 +89,6 @@ span {
   margin: 2rem auto;
 }
 
-/* Header */
 .header {
   width: 100%;
   background-color: #ffffff;
@@ -123,7 +122,8 @@ span {
 
 .footer {
   background-color: #343534;
-  height: 5rem;
+  height: auto;
+  max-width: 100%;
   margin-top: 2rem;
 }
 .footer__barra {
@@ -135,10 +135,15 @@ span {
   color: #ffffff;
   font-size: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 1rem;
+}
+@media (min-width: 468px) {
+  .footer__enlace {
+    flex-direction: row;
+  }
 }
 
 .bg__portada {
@@ -149,16 +154,28 @@ span {
   background-size: cover;
 }
 
-/** Formulario **/
-.formulario {
+.contacto__form {
   margin-bottom: 2rem;
-}
-.formulario__img {
-  height: 600px;
-  width: 500px;
-  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
+.contacto__img {
+  height: 400px;
+  width: 300px;
+  border-radius: 4rem;
+}
+
+@media (min-width: 468px) {
+  .contacto__form {
+    flex-direction: row;
+  }
+  .contacto__img {
+    height: 600px;
+    width: 400px;
+  }
+}
 form {
   width: 450px;
   margin: 0 auto;
@@ -204,11 +221,6 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-@media (min-width: 992px) {
-  .formulario {
-    display: flex;
-  }
-}
 .pagos {
   display: flex;
   flex-direction: column;
@@ -229,6 +241,10 @@ input[type=submit]:hover {
     justify-content: space-evenly;
   }
 }
+.catalogo {
+  margin-top: 15rem;
+}
+
 .producto {
   background-color: #566440;
   padding: 1rem;

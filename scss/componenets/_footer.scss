@@ -2,7 +2,8 @@
 
 .footer {
     background-color: $oscuro;
-    height: 5rem;
+    height: auto;
+    max-width: 100%;
     margin-top: 2rem;
     
     &__barra {
@@ -15,9 +16,15 @@
         color: $blanco;
         font-size: 2rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 1rem;
     }
+    @media (min-width: 468px) {
+        &__enlace {
+            flex-direction: row;
+        }
+    }
 }
+

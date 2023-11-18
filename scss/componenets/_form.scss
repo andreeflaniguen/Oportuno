@@ -1,14 +1,30 @@
-/** Formulario **/
 
-.formulario {
+.contacto__form {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
 
-    &__img {
+.contacto__img {
+    height: 400px;
+    width: 300px;
+    border-radius: 4rem;
+}
+
+@media (min-width: 468px) {
+    .contacto__form {
+        flex-direction: row;
+    }
+    .contacto__img {
         height: 600px;
-        width: 500px;
-        border-radius: 5px;
+        width: 400px;
     }
 }
+
+
+
+
 
 
 
@@ -58,8 +74,4 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-@media (min-width: 992px) {
-    .formulario {
-        display: flex;
-    }
-}
+
