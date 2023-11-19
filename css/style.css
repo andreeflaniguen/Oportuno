@@ -21,11 +21,6 @@ main {
   margin-top: 10rem;
 }
 
-@media (max-width: 468px) {
-  main {
-    margin-top: 40rem;
-  }
-}
 /* Globales */
 .contenedor {
   max-width: 120rem;
@@ -97,10 +92,14 @@ span {
 .header {
   width: 100%;
   background-color: #ffffff;
-  position: fixed;
-  top: 0;
 }
 
+@media (min-width: 468px) {
+  .header {
+    position: fixed;
+    top: 0;
+  }
+}
 .barra {
   display: flex;
   flex-direction: column;
@@ -359,7 +358,7 @@ input[type=submit]:hover {
   background-color: transparent;
   color: #000000;
   font-size: 2rem;
-  font-family: "cocomat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 2rem;
   border-radius: 10px;
 }
